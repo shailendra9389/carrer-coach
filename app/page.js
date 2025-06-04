@@ -11,7 +11,7 @@ export default function Home() {
     </h1>
    
    {/* <p className="text-red-500">this is me</p> */}
-    <Button className="text-red-500">Hello</Button>
+    <Button className="">Hello</Button>
     <Input className="w-30px"></Input>
     </div>
   );
