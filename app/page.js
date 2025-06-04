@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-  <h1 className="text-6xl font-bold underline text-red-500">
+  <h1 className="text-6xl font-bold underline text-red-400w">
       Hello world!
     </h1>
    
