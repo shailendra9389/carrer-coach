@@ -1,8 +1,6 @@
-import React from 'react'
-import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs';
-import Link from 'next/link';
-import Image from 'next/image';
+import React from "react";
 import { Button } from "./ui/button";
+
 import {
   PenBox,
   LayoutDashboard,
@@ -11,25 +9,30 @@ import {
   ChevronDown,
   StarsIcon,
 } from "lucide-react";
-
+import Link from "next/link";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import Image from "next/image";
 
-const Header = () => {
+
+export default async function Header() {
+ 
+
   return (
     <header className="fixed top-0 w-full border-b bg-background/80 backdrop-blur-md z-50 supports-[backdrop-filter]:bg-background/60">
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/">
-          <Image 
+          <Image
             src={"/logo.png"}
-            alt="Sensai Logo"
+            alt="carrer-coach-ai"
             width={200}
             height={60}
-            className="h-20  py-1 w-auto object-contain"
+            className="h-12 py-1 w-auto object-contain"
           />
         </Link>
 
@@ -106,5 +109,4 @@ const Header = () => {
       </nav>
     </header>
   );
-} 
-export default Header
+}
