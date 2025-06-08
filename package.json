@@ -11,6 +11,7 @@
   "dependencies": {
     "@clerk/nextjs": "^6.20.2",
     "@clerk/themes": "^2.2.48",
+    "@google/generative-ai": "^0.24.1",
     "@hookform/resolvers": "^5.0.1",
     "@prisma/client": "^6.9.0",
     "@radix-ui/react-accordion": "^1.2.10",
@@ -25,7 +26,11 @@
     "@radix-ui/react-tabs": "^1.1.11",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+<<<<<<< HEAD
     "hooks": "^0.3.2",
+=======
+    "date-fns": "^4.1.0",
+>>>>>>> 2c37e4428a5e8c3724e07ecaf4967bb27b9e7c86
     "inngest": "^3.38.0",
     "lucide-react": "^0.511.0",
     "next": "15.3.2",
@@ -34,6 +39,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.57.0",
+    "react-spinners": "^0.17.0",
+    "recharts": "^2.15.3",
     "sonner": "^2.0.5",
     "tailwind-merge": "^3.3.0",
     "use-fetch": "^0.0.7",

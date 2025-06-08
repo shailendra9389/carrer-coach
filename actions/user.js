@@ -2,9 +2,13 @@
 
 import { db } from "@/lib/prisma";
 import { auth } from "@clerk/nextjs/server";
+<<<<<<< HEAD
 import { revalidatePath } from "next/cache";
 // import { generateAIInsights } from "./dashboard";
 // import { generateAIInsights } from "./dashboard";
+=======
+import { revalidatePath } from "next/cache"; import { generateAIInsights } from "./dashboard";
+>>>>>>> 2c37e4428a5e8c3724e07ecaf4967bb27b9e7c86
 
 export async function updateUser(data) {
   const { userId } = await auth();

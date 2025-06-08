@@ -1,9 +1,21 @@
-import React from 'react'
+import { getIndustryInsights } from "@/actions/dashboard";
+import DashboardView from "./_component/dashboard-view";
+import { getUserOnboardingStatus } from "@/actions/user";
+import { redirect } from "next/navigation";
 
-const IndustryInsightsPage = () => {
+export default async function IndustryInsightsPage() {
+  const { isOnboarded } = await getUserOnboardingStatus();
+
+  // If not onboarded, redirect to onboarding page
+  // Skip this check if already on the onboarding page
+  if (!isOnboarded) {
+    redirect("/onboarding");
+  }
+
+  const insights = await getIndustryInsights();
+
   return (
     <div>IndustryInsights</div>
   )
 }
 
-export default IndustryInsightsPage;
