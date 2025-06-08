@@ -4,6 +4,7 @@ import { db } from "@/lib/prisma";
 import { auth } from "@clerk/nextjs/server";
 import { revalidatePath } from "next/cache";
 // import { generateAIInsights } from "./dashboard";
+// import { generateAIInsights } from "./dashboard";
 
 export async function updateUser(data) {
   const { userId } = await auth();
@@ -40,6 +41,10 @@ export async function updateUser(data) {
               marketOutlook: "NEUTRAL",
               keyTrends: [],
               recommendedSkills: [],
+          industryInsight = await db.industryInsight.create({
+            data: {
+              industry: data.industry,
+              ...insights,
               nextUpdate: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
             },
           });
@@ -67,6 +72,8 @@ export async function updateUser(data) {
 
     // revalidatePath("/");
     return { success: true, ...result };
+    
+   
   } catch (error) {
     console.error("Error updating user and industry:", error.message);
     throw new Error("Failed to update profile");
@@ -98,6 +105,7 @@ export async function getUserOnboardingStatus() {
     };
   } catch (error) {
     console.error("Error checking onboarding status:", error.message);
+   
     throw new Error("Failed to check onboarding status");
   }
 }
