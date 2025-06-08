@@ -27,12 +27,20 @@
     "@uiw/react-md-editor": "^4.0.7",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+<<<<<<< HEAD
+    "hooks": "^0.3.2",
+=======
     "date-fns": "^4.1.0",
+<<<<<<< HEAD
     "html2pdf.js": "^0.10.3",
+=======
+>>>>>>> 2c37e4428a5e8c3724e07ecaf4967bb27b9e7c86
+>>>>>>> 51f6f422dc006e183d5e58376eb88dd4c5c7af7f
     "inngest": "^3.38.0",
     "lucide-react": "^0.511.0",
     "next": "15.3.2",
     "next-themes": "^0.4.6",
+    "prisma": "^6.9.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.57.0",
@@ -40,6 +48,7 @@
     "recharts": "^2.15.3",
     "sonner": "^2.0.5",
     "tailwind-merge": "^3.3.0",
+    "use-fetch": "^0.0.7",
     "zod": "^3.25.56"
   },
   "devDependencies": {

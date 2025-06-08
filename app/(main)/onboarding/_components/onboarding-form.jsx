@@ -63,6 +63,8 @@ const OnboardingForm = ({ industries }) => {
     } catch (error) {
       console.error("Onboarding error:", error);
     }
+    console.log("Form submitted with values:", values);
+    
   };
 
   useEffect(() => {
